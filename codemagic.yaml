@@ -2,25 +2,16 @@ workflows:
   # Debug build workflow - for testing
   debug:
     name: Debug Build
-    instance_type: mac_mini_m1
+    instance_type: mac_mini_m2
     max_build_duration: 60
     
     environment:
       groups:
         - default
-      android_signing:
-        - debug_keystore  # Use debug keystore for debug builds
       vars:
         PACKAGE_NAME: "com.wakeup.app"
         
     scripts:
-      - name: Set up Java
-        script: |
-          echo "Setting up Java 17..."
-          export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-          export PATH=$JAVA_HOME/bin:$PATH
-          java -version
-          
       - name: Grant execute permissions
         script: |
           chmod +x gradlew
@@ -56,7 +47,7 @@ workflows:
   # Release build workflow - for distribution
   release:
     name: Release Build
-    instance_type: mac_mini_m1
+    instance_type: mac_mini_m2
     max_build_duration: 60
     
     environment:
@@ -66,13 +57,6 @@ workflows:
         PACKAGE_NAME: "com.wakeup.app"
         
     scripts:
-      - name: Set up Java
-        script: |
-          echo "Setting up Java 17..."
-          export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-          export PATH=$JAVA_HOME/bin:$PATH
-          java -version
-          
       - name: Grant execute permissions
         script: |
           chmod +x gradlew
