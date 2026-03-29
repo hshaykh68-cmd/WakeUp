@@ -12,8 +12,10 @@ workflows:
         PACKAGE_NAME: "com.wakeup.app"
         
     scripts:
-      - name: Grant execute permissions
+      - name: Setup Gradle Wrapper
         script: |
+          mkdir -p gradle/wrapper
+          curl -L -o gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.2.0/gradle/wrapper/gradle-wrapper.jar
           chmod +x gradlew
           
       - name: Download dependencies
@@ -57,8 +59,10 @@ workflows:
         PACKAGE_NAME: "com.wakeup.app"
         
     scripts:
-      - name: Grant execute permissions
+      - name: Setup Gradle Wrapper
         script: |
+          mkdir -p gradle/wrapper
+          curl -L -o gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.2.0/gradle/wrapper/gradle-wrapper.jar
           chmod +x gradlew
           
       - name: Download dependencies
