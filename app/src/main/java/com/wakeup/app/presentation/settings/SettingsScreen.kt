@@ -121,6 +121,7 @@ fun SettingsScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun PremiumCard(onClick: () -> Unit) {
     Card(
@@ -253,6 +254,7 @@ private fun SettingsSwitchItem(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun SettingsClickableItem(
     icon: ImageVector,

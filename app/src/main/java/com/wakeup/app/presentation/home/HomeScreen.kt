@@ -123,11 +123,13 @@ private fun HomeHeader(streak: Int, greeting: String) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun NextAlarmCard(
     nextAlarm: Alarm?,
     onNavigateToAlarms: () -> Unit
 ) {
+    @OptIn(ExperimentalMaterial3Api::class)
     Card(
         onClick = onNavigateToAlarms,
         modifier = Modifier
@@ -227,6 +229,7 @@ private fun NextAlarmCard(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun StreakCard(streak: Int) {
     Card(

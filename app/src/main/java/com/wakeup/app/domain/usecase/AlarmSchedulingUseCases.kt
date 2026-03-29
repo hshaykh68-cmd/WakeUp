@@ -1,6 +1,7 @@
 package com.wakeup.app.domain.usecase
 
 import com.wakeup.app.domain.model.Alarm
+import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 
 class ScheduleAlarmUseCase @Inject constructor(
@@ -24,7 +25,7 @@ class RescheduleAllAlarmsUseCase @Inject constructor(
     private val getEnabledAlarmsUseCase: GetEnabledAlarmsUseCase
 ) {
     suspend operator fun invoke() {
-        val alarms = getEnabledAlarmsUseCase()
+        val alarms = getEnabledAlarmsUseCase().first()
         alarms.forEach { alarmScheduler.schedule(it) }
     }
 }

@@ -53,20 +53,21 @@ class AlarmService : Service() {
         val isSnooze = intent.getBooleanExtra(AlarmReceiver.EXTRA_IS_SNOOZE, false)
 
         // Build the notification
-        val fullScreenIntent = Intent(this, AlarmRingingActivity::class.java).apply {
-            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
-            putExtra(AlarmReceiver.EXTRA_ALARM_ID, alarmId)
-            putExtra(AlarmReceiver.EXTRA_ALARM_LABEL, alarmLabel)
-            putExtra(AlarmReceiver.EXTRA_ALARM_SOUND_URI, soundUri)
-            putExtra(AlarmReceiver.EXTRA_ALARM_VIBRATION, useVibration)
-            putExtra(AlarmReceiver.EXTRA_ALARM_GRADUAL_VOLUME, gradualVolume)
-            putExtra(AlarmReceiver.EXTRA_MISSION_TYPE, missionType.name)
-            putExtra(AlarmReceiver.EXTRA_MISSION_DIFFICULTY, missionDifficulty.name)
-            putExtra(AlarmReceiver.EXTRA_STRICT_MODE, strictMode)
-            putExtra(AlarmReceiver.EXTRA_SNOOZE_ENABLED, snoozeEnabled)
-            putExtra(AlarmReceiver.EXTRA_SNOOZE_INTERVAL, snoozeInterval)
-            putExtra(AlarmReceiver.EXTRA_MAX_SNOOZES, maxSnoozes)
-            putExtra(AlarmReceiver.EXTRA_IS_SNOOZE, isSnooze)
+        val fullScreenIntent = Intent(this, AlarmRingingActivity::class.java).let { intent ->
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+            intent.putExtra(AlarmReceiver.EXTRA_ALARM_ID, alarmId)
+            intent.putExtra(AlarmReceiver.EXTRA_ALARM_LABEL, alarmLabel)
+            intent.putExtra(AlarmReceiver.EXTRA_ALARM_SOUND_URI, soundUri)
+            intent.putExtra(AlarmReceiver.EXTRA_ALARM_VIBRATION, useVibration)
+            intent.putExtra(AlarmReceiver.EXTRA_ALARM_GRADUAL_VOLUME, gradualVolume)
+            intent.putExtra(AlarmReceiver.EXTRA_MISSION_TYPE, missionType.name)
+            intent.putExtra(AlarmReceiver.EXTRA_MISSION_DIFFICULTY, missionDifficulty.name)
+            intent.putExtra(AlarmReceiver.EXTRA_STRICT_MODE, strictMode)
+            intent.putExtra(AlarmReceiver.EXTRA_SNOOZE_ENABLED, snoozeEnabled)
+            intent.putExtra(AlarmReceiver.EXTRA_SNOOZE_INTERVAL, snoozeInterval)
+            intent.putExtra(AlarmReceiver.EXTRA_MAX_SNOOZES, maxSnoozes)
+            intent.putExtra(AlarmReceiver.EXTRA_IS_SNOOZE, isSnooze)
+            intent
         }
 
         val fullScreenPendingIntent = PendingIntent.getActivity(

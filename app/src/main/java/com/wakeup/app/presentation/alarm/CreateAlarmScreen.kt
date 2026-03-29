@@ -203,7 +203,7 @@ fun CreateAlarmScreen(
 }
 
 @Composable
-private fun TimePickerSection(
+fun TimePickerSection(
     hour: Int,
     minute: Int,
     onHourChange: (Int) -> Unit,
@@ -255,7 +255,7 @@ private fun TimePickerSection(
 }
 
 @Composable
-private fun NumberSelector(
+fun NumberSelector(
     value: Int,
     onIncrement: () -> Unit,
     onDecrement: () -> Unit,
@@ -281,8 +281,9 @@ private fun NumberSelector(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun RepeatDaysSection(
+fun RepeatDaysSection(
     selectedDays: Set<DayOfWeek>,
     onToggleDay: (DayOfWeek) -> Unit
 ) {
@@ -321,8 +322,9 @@ private fun RepeatDaysSection(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun MissionSection(
+fun MissionSection(
     selectedType: MissionType,
     selectedDifficulty: MissionDifficulty,
     onTypeSelect: (MissionType) -> Unit,
@@ -377,7 +379,7 @@ private fun MissionSection(
 }
 
 @Composable
-private fun OptionsSection(
+fun OptionsSection(
     strictMode: Boolean,
     onStrictModeChange: (Boolean) -> Unit,
     useVibration: Boolean,
@@ -426,7 +428,7 @@ private fun OptionsSection(
 }
 
 @Composable
-private fun OptionSwitch(
+fun OptionSwitch(
     label: String,
     description: String,
     checked: Boolean,
