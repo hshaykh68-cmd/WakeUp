@@ -1,0 +1,1022 @@
+# Z AI Agent Master Build Prompt — Premium Anti-Snooze Alarm App
+
+You are an autonomous senior Android engineer, senior Kotlin architect, senior Jetpack Compose UI engineer, senior product designer, senior mobile UX strategist, and premium app builder.
+
+You are NOT acting like a casual assistant.
+You are acting like a serious autonomous engineering agent responsible for building a real, polished, production-quality Android app.
+
+Your job is to deeply analyze, architect, and generate a complete Android project with:
+
+* premium-quality UI/UX
+* beautiful modern design
+* scalable architecture
+* excellent performance
+* clean production-grade code
+* cloud-build readiness
+* monetization-ready structure
+
+This is NOT a toy app.
+This is NOT a tutorial project.
+This is NOT a low-effort MVP.
+This is NOT allowed to look or feel generic.
+
+This must feel like a serious, premium, modern consumer app.
+
+---
+
+# 1) EXECUTION MODE
+
+Follow this workflow exactly:
+
+## STEP 1 — ANALYZE FIRST
+
+Before generating any code:
+
+* deeply analyze the entire app idea
+* identify the product structure
+* identify the app modules
+* identify core features
+* identify user pain points
+* identify retention mechanics
+* identify monetization opportunities
+* identify all screens
+* identify navigation structure
+* identify local persistence needs
+* identify alarm/foreground/background technical needs
+* identify edge cases and anti-cheat risks
+* identify performance risks
+* identify Android permission/service requirements
+* identify Codemagic build requirements
+
+## STEP 2 — ASK QUESTIONS FIRST
+
+Before coding:
+
+* ask only the most important high-value clarification questions
+* ask only what is necessary to avoid major product or architecture mistakes
+* do NOT ask too many questions
+* do NOT start coding immediately
+
+## STEP 3 — FINAL IMPLEMENTATION PLAN
+
+After my answers:
+
+* provide the final implementation plan
+* architecture
+* folder/package structure
+* feature breakdown
+* dependency decisions
+* navigation graph
+* alarm engine structure
+* mission system structure
+* premium feature structure
+* local persistence structure
+* service/background execution strategy
+* notification strategy
+* Codemagic build strategy
+
+## STEP 4 — BUILD THE PROJECT
+
+Then generate the complete project properly, file by file, in realistic production structure.
+
+
+
+---
+
+# 2) PROJECT OVERVIEW
+
+## App Type
+
+A premium anti-snooze smart alarm app that forces the user to actually wake up.
+
+App Name: WakeUp
+
+## Platform
+
+Android only
+
+## Language
+
+Kotlin
+
+## UI Framework
+
+Jetpack Compose
+
+## Architecture
+
+MVVM + Repository Pattern + UseCases
+
+## Backend
+
+None for now
+
+## Future Backend
+
+Firebase later for:
+
+* premium/subscription sync
+* remote config
+* feature flags
+* cloud backup if needed later
+
+## Goal
+
+Build a highly polished, modern, beautiful, premium-feeling alarm app that helps users wake up reliably and prevents them from cheating or snoozing mindlessly.
+
+---
+
+# 3) PRODUCT POSITIONING
+
+This app is NOT “just an alarm app”.
+
+This app should be positioned and designed as:
+
+## “A wake-up enforcement system”
+
+Core promise:
+
+> This app helps you actually get out of bed.
+
+The app should solve the real user pain:
+
+* oversleeping
+* snoozing repeatedly
+* failing morning routines
+* lack of discipline
+* poor sleep consistency
+* waking up but falling back asleep
+
+The product should feel:
+
+* premium
+* sharp
+* modern
+* strict
+* intelligent
+* motivating
+* smooth
+* beautiful
+* satisfying to use
+
+It must NOT feel like:
+
+* a cheap utility app
+* a template project
+* a childish gimmick app
+* a generic alarm clone
+
+---
+
+# 4) NON-NEGOTIABLE QUALITY RULES
+
+Follow these strictly:
+
+1. Do NOT generate ugly, generic, default-looking UI.
+2. Do NOT create tutorial-style architecture.
+3. Do NOT create shallow scaffolding pretending it is complete.
+4. Do NOT skip important files.
+5. Do NOT leave core functionality half-implemented.
+6. Do NOT overengineer.
+7. Do NOT underengineer.
+8. Do NOT use bloated dependencies without strong reason.
+9. Do NOT produce random inconsistent design.
+10. Do NOT use poor placeholder emoji icons in the app.
+11. Use proper premium modern Android icons and polished visuals.
+12. Use tasteful animations and micro-interactions.
+13. Performance must always come before flashy effects.
+14. The app must run well on low-end and mid-range Android devices.
+15. The codebase must look professional and production-structured.
+16. The app must feel like a premium product, not a side project.
+17. The app must feel intentionally designed in every screen.
+
+---
+
+# 5) EXTREMELY IMPORTANT UI / UX REQUIREMENT
+
+This is one of the MOST important requirements.
+
+## The UI/UX and design MUST be extremely beautiful, modern, premium, and polished.
+
+This is NOT optional.
+
+The app must look like a premium app users would happily pay for.
+
+The design must feel:
+
+* sleek
+* modern
+* elegant
+* smooth
+* visually rich but not cluttered
+* premium
+* futuristic but practical
+* emotionally satisfying
+* habit-forming
+* beautiful enough to stand out from competitors
+
+## The app must NOT look:
+
+* basic
+* flat and boring
+* like default Material demo screens
+* like a student project
+* like a generic utility app
+* like an old Android app
+* like an ugly alarm app clone
+
+## UX quality must be extremely high:
+
+* every screen should feel intentionally designed
+* spacing must feel premium
+* typography hierarchy must feel polished
+* buttons must feel satisfying
+* interactions must feel smooth
+* cards, sheets, dialogs, and animations must feel premium
+* transitions must feel elegant
+* onboarding must feel attractive
+* mission flows must feel exciting and high-quality
+* the app must feel addictive to use in a good way
+
+## IMPORTANT:
+
+Use Material 3 as a base system, but heavily customize it so the app does NOT look like a default template.
+
+UI/UX quality is a top priority equal to functionality.
+
+---
+
+# 6) APP CONCEPT / CORE EXPERIENCE
+
+The app should help users:
+
+* wake up on time
+* avoid snoozing
+* complete wake-up missions
+* build stronger morning discipline
+* feel rewarded for consistency
+
+The experience should feel like:
+
+## discipline + premium lifestyle + behavioral system
+
+The user should feel:
+
+* challenged
+* supported
+* in control
+* motivated
+* rewarded for consistency
+
+---
+
+# 7) CORE FEATURE SET
+
+Implement these features properly:
+
+## 7.1 ALARM CREATION
+
+* Create alarm
+* Set time
+* Repeat days
+* Alarm label
+* Sound selection
+* Vibration toggle
+* Gradual volume option
+* Alarm intensity / difficulty level
+* Smart snooze settings
+
+## 7.2 ALARM LIST / DASHBOARD
+
+* Beautiful alarm list screen
+* Toggle alarms on/off
+* Edit alarm
+* Delete alarm
+* Duplicate alarm
+* Visual grouping if useful
+* Beautiful card-based presentation
+
+## 7.3 ANTI-SNOOZE MISSIONS
+
+When alarm rings, user should NOT be able to dismiss easily.
+
+Implement a mission-based dismissal system.
+
+Possible missions:
+
+* Math challenge
+* Memory pattern challenge
+* Typing phrase accurately
+* Shake / movement challenge
+* Step / walking challenge
+* Brightness / light exposure challenge (if practical)
+* Multi-step mission mode
+* Timed challenge mode
+
+The system should be modular so more missions can be added later.
+
+## 7.4 HARD MODE / STRICT MODE
+
+Implement a strict mode system.
+
+Possible behavior:
+
+* limit snooze count
+* require mission completion before stopping alarm
+* increase difficulty if user repeatedly snoozes
+* disable easy dismissal behavior
+
+## 7.5 WAKE-UP FLOW
+
+When alarm triggers:
+
+* full-screen wake-up interface
+* strong visual urgency
+* premium alarm ringing screen
+* beautiful but high-pressure UX
+* mission-first interaction
+* no cheap or ugly alarm screen
+
+## 7.6 WAKE SESSION RESULTS
+
+After successful wake-up:
+
+* success screen
+* completion summary
+* streak update
+* positive reinforcement
+* subtle celebration animation
+
+## 7.7 STREAK / CONSISTENCY TRACKING
+
+Track:
+
+* wake streak
+* successful wake-ups
+* failed alarms
+* snooze count
+* completion stats
+
+## 7.8 BASIC ANALYTICS DASHBOARD
+
+A polished lightweight dashboard showing:
+
+* wake-up streak
+* consistency
+* weekly completion
+* success rate
+* trends
+
+This should feel beautiful and motivating.
+
+## 7.9 PREMIUM FEATURES STRUCTURE
+
+Prepare premium/local mock architecture for:
+
+* advanced mission packs
+* strict mode upgrades
+* advanced analytics
+* more customization
+* remove ads
+* premium themes / styles if desired
+
+## 7.10 NOTIFICATION / FOREGROUND SERVICE STRUCTURE
+
+Prepare proper Android-safe structure for:
+
+* alarm notifications
+* foreground behavior where required
+* full-screen alarm experience
+* reliability
+
+---
+
+# 8) REQUIRED MAIN SCREENS
+
+At minimum, build these properly:
+
+1. Splash / Entry Screen
+2. Beautiful Onboarding Screens
+3. Permission / Setup Guidance Screens
+4. Home Dashboard Screen
+5. Alarm List Screen
+6. Create / Edit Alarm Screen
+7. Alarm Ringing Fullscreen Screen
+8. Mission Challenge Screen(s)
+9. Wake Success Screen
+10. Stats / Analytics Screen
+11. Premium / Upgrade Screen
+12. Settings Screen
+13. Empty State UI
+14. Error / Failure State UI
+
+---
+
+# 9) PRIMARY NAVIGATION REQUIREMENTS
+
+The app MUST use **Bottom Navigation** as the main navigation.
+
+Use exactly these 4 main tabs:
+
+1. Home
+2. Alarms
+3. Stats
+4. Settings
+
+## Navigation Rules
+
+* Bottom navigation must be beautiful and premium
+* Use elegant icons and labels
+* Use polished selected/unselected states
+* Use subtle motion if appropriate
+* Keep route structure clean and scalable
+* Use proper Compose Navigation
+* Use sealed routes or similarly clean navigation patterns
+
+## Additional Routes (NOT bottom tabs)
+
+These should open as separate routes/flows:
+
+* Splash
+* Onboarding
+* Create Alarm
+* Edit Alarm
+* Alarm Ringing Screen
+* Mission Challenge Screens
+* Wake Success Screen
+* Premium Screen
+* Dialog-style setup flows if needed
+
+---
+
+# 10) HOME DASHBOARD UX REQUIREMENTS
+
+The Home screen must feel premium and motivating.
+
+It should NOT be a boring utility dashboard.
+
+## Home should include:
+
+* next alarm overview
+* wake streak card
+* quick stats snapshot
+* motivational but tasteful UI
+* quick “Create Alarm” CTA
+* optional recent wake history section
+* premium-feel visual hierarchy
+
+## UX Goal
+
+When user opens the app, they should feel:
+
+> “This app is serious, beautiful, and built to help me win mornings.”
+
+---
+
+# 11) ALARM LIST SCREEN REQUIREMENTS
+
+The Alarms tab should feel extremely polished.
+
+## It should include:
+
+* beautiful alarm cards
+* time display
+* repeat days
+* mission difficulty indicator
+* active/inactive state
+* clean toggle
+* quick edit
+* quick delete
+* empty state if no alarms exist
+
+## UX Quality Rule
+
+This screen must feel visually premium, not like a default clock clone.
+
+---
+
+# 12) CREATE / EDIT ALARM UX REQUIREMENTS
+
+This is one of the most important screens.
+
+The alarm creation flow must feel:
+
+* elegant
+* intuitive
+* smooth
+* premium
+* satisfying
+
+## Include:
+
+* time picker
+* repeat day selector
+* mission selector
+* difficulty selector
+* snooze settings
+* sound selection
+* vibration
+* label input
+* strict mode toggle
+
+## UX Rule
+
+This should feel like configuring a high-quality system, not filling a boring form.
+
+---
+
+# 13) ALARM RINGING / WAKE-UP SCREEN REQUIREMENTS
+
+This screen is CRITICAL.
+
+When alarm rings, the full-screen wake-up UI must feel:
+
+* intense
+* urgent
+* polished
+* premium
+* immersive
+* difficult to ignore
+
+## It should include:
+
+* strong alarm visual hierarchy
+* current time
+* alarm label
+* wake mission CTA
+* optional snooze action depending on settings
+* strong dismissal prevention logic
+
+## Important
+
+This screen must NOT look ugly, cheap, or outdated.
+
+It should feel like a high-stakes interaction.
+
+---
+
+# 14) MISSION SYSTEM REQUIREMENTS
+
+Build the anti-snooze mission system in a modular way.
+
+Each mission should feel:
+
+* polished
+* smooth
+* clear
+* satisfying
+* not childish
+* not poorly gamified
+
+## Recommended initial missions:
+
+1. Math Challenge
+2. Memory Pattern Challenge
+3. Type Exact Phrase Challenge
+4. Shake / Motion Challenge
+5. Walking / Step Challenge (if practical)
+
+## Mission architecture must support:
+
+* difficulty levels
+* mission reuse
+* future mission expansion
+* random mission assignment if desired
+* premium mission locking structure
+
+---
+
+# 15) STATS / ANALYTICS SCREEN REQUIREMENTS
+
+This screen should feel motivating and premium.
+
+Include beautiful cards / data blocks for:
+
+* current streak
+* weekly success
+* total wake-ups
+* snooze usage
+* failure rate
+* completion trends
+
+The design must feel:
+
+* modern
+* polished
+* satisfying
+* useful
+* not cluttered
+
+Use clean chart/card style if appropriate, but keep it lightweight and beautiful.
+
+---
+
+# 16) SETTINGS SCREEN REQUIREMENTS
+
+Include a polished Settings screen with useful options such as:
+
+* alarm defaults
+* sound preferences
+* vibration preferences
+* strict mode defaults
+* snooze settings
+* premium upgrade
+* privacy / disclaimer
+* about app
+* app version
+
+Keep it clean, elegant, and premium-looking.
+
+---
+
+# 17) DESIGN SYSTEM REQUIREMENTS
+
+Build a highly polished premium dark UI.
+
+## Design Direction
+
+The app should feel like a cross between:
+
+* premium productivity app
+* modern wellness app
+* behavioral discipline app
+* elegant Android flagship app
+
+## Color Direction
+
+Use a polished premium dark palette such as:
+
+* Background: #0B0F14
+* Surface: #121821
+* Card Surface: #171F2B
+* Accent Primary: #7C5CFF
+* Accent Secondary: #00D4FF
+* Success: #36D98A
+* Warning: #FFB84D
+* Error: #FF5C7A
+* Primary Text: #FFFFFF
+* Secondary Text: #A8B3C7
+
+## Style Rules
+
+* rounded corners
+* premium cards
+* subtle shadows/elevation
+* rich but controlled contrast
+* clean spacing
+* beautiful typography hierarchy
+* tasteful gradients if performance-safe
+* elegant glass-like polish ONLY if lightweight and practical
+* modern chips / toggles / segmented controls
+* premium bottom sheets and dialogs
+
+## VERY IMPORTANT
+
+The design must feel:
+
+* luxurious
+* addictive
+* modern
+* polished
+* visually superior to average Play Store alarm apps
+
+---
+
+# 18) ANIMATION / MICRO-INTERACTION REQUIREMENTS
+
+Use tasteful premium motion.
+
+Include:
+
+* tap scale feedback
+* page transitions
+* card entrance animation
+* toggle transitions
+* wake success animation
+* onboarding motion
+* mission completion animation
+* streak celebration feedback
+* Lottie where valuable
+
+Rules:
+
+* animations must feel smooth and premium
+* animations must not feel childish
+* animations must not slow the app
+* do NOT over-animate everything
+
+---
+
+# 19) PERFORMANCE REQUIREMENTS
+
+This is VERY important.
+
+The app must be optimized for:
+
+* low-end and mid-range Android devices
+* smooth scrolling
+* low memory overhead
+* responsive Compose UI
+* fast startup
+* efficient local persistence
+* practical build stability
+
+## Use:
+
+* efficient state handling
+* stable Compose patterns
+* lightweight dependencies
+* efficient service logic
+* practical local storage
+* smart UI recomposition control
+
+## Avoid:
+
+* bloated libraries
+* unnecessary background complexity
+* bad service handling
+* wasteful animations
+* overcomplicated architecture
+
+---
+
+# 20) APP ARCHITECTURE REQUIREMENTS
+
+Use clean scalable architecture.
+
+## Required Architecture
+
+* MVVM
+* Repository Pattern
+* UseCases
+* StateFlow
+* Coroutines
+
+## Dependency Injection
+
+Use Hilt if appropriate and practical.
+Do not make DI messy or unnecessarily heavy.
+
+## Recommended Layer Structure
+
+presentation/
+
+* screens
+* components
+* navigation
+* viewmodels
+* ui state
+
+domain/
+
+* models
+* repository interfaces
+* usecases
+
+data/
+
+* repositories
+* alarm scheduler
+* mission engine
+* local persistence
+* stats manager
+* premium manager
+* ad manager
+
+core/
+
+* theme
+* constants
+* utils
+* extensions
+* common reusable components
+
+The codebase must be clean, modular, scalable, and professional.
+
+---
+
+# 21) LOCAL PERSISTENCE REQUIREMENTS
+
+Use appropriate lightweight local persistence.
+
+Likely persistence needs:
+
+* alarms
+* alarm configuration
+* mission settings
+* streak data
+* wake history
+* onboarding completion
+* premium mock state
+* settings/preferences
+
+Use the most appropriate tools:
+
+* DataStore
+* Room if strongly justified
+* SharedPreferences only if truly appropriate for simple cases
+
+Do NOT use poor storage design.
+
+---
+
+# 22) ANDROID TECHNICAL REQUIREMENTS
+
+The app must be architected correctly for Android alarm reliability.
+
+This includes proper handling/planning for:
+
+* alarm scheduling
+* exact alarms if needed
+* alarm manager strategy
+* foreground service strategy if required
+* full-screen alarm notification behavior
+* wake-up flow reliability
+* reboot persistence if needed later
+* Do Not Disturb considerations if relevant
+* battery optimization awareness if needed
+
+Do NOT ignore real Android alarm behavior constraints.
+
+---
+
+# 23) MONETIZATION REQUIREMENTS
+
+Prepare monetization architecture cleanly.
+
+## AdMob
+
+Use real official AdMob **test IDs only** for now.
+
+Potential ad placements:
+
+* subtle banner placement if tasteful
+* interstitial at low-friction moments only
+* rewarded optional unlock moments if justified
+
+Ads must NOT ruin the premium feel.
+
+## Premium Mock Structure
+
+Prepare local/mock premium architecture for:
+
+* advanced missions
+* advanced analytics
+* strict mode unlocks
+* remove ads
+* premium customization
+* future subscription structure
+
+Do NOT implement a real billing backend unless lightly scaffolded and clearly separated.
+
+---
+
+# 24) ONBOARDING / USER FLOW REQUIREMENTS
+
+The app must have a strong and beautiful onboarding flow.
+
+## Core user flow should feel like:
+
+1. User installs app
+2. Beautiful onboarding explains value
+3. Setup guidance makes configuration easy
+4. User creates first alarm
+5. User chooses wake mission
+6. User experiences polished wake-up flow
+7. User gets rewarded with streak/progress
+8. User wants to keep using it daily
+
+## Important
+
+The onboarding must make the app feel exciting, premium, and useful immediately.
+
+---
+
+# 25) DEPENDENCY / TOOLING REQUIREMENTS
+
+Include proper modern Android project setup.
+
+Must include:
+
+* project Gradle config
+* app Gradle config
+* settings.gradle
+* gradle.properties
+* AndroidManifest.xml
+* ProGuard / rules if needed
+* repositories
+* plugin setup
+* Compose setup
+* navigation dependency
+* Room/DataStore dependency if justified
+* Hilt dependency if used
+* Lottie dependency
+* AdMob dependency
+* chart/UI dependency only if justified
+* any necessary alarm/service-related dependencies
+
+Do NOT add random unnecessary libraries.
+
+---
+
+# 26) CODEMAGIC REQUIREMENTS
+
+This is VERY important.
+
+I will use **Codemagic.io** because I do not have a powerful PC.
+
+So the project must be prepared to build smoothly on Codemagic.
+
+## You MUST include:
+
+* full Gradle setup
+* cloud-build-safe structure
+* realistic dependency setup
+* proper artifact paths
+* useful caching if practical
+
+## Create a FULL `codemagic.yaml`
+
+It must include:
+
+1. Debug workflow
+2. Release workflow
+
+## Important Rules
+
+* DO NOT include keystore setup
+* DO NOT include signing secrets
+* DO NOT include signing config instructions
+* focus on buildability
+* keep it realistic and practical
+
+## Workflow Expectations
+
+Include:
+
+* Java setup
+* Gradle setup
+* Android SDK assumptions
+* build commands
+* artifact output paths
+* sensible Codemagic structure
+
+---
+
+# 27) FILE / OUTPUT REQUIREMENTS
+
+When generating the project, output it in a clean **file-by-file structure**.
+
+For every file:
+
+1. Show the full file path
+2. Then provide the complete file contents
+3. Include imports
+4. Do NOT truncate code
+5. Do NOT summarize files instead of writing them
+6. Do NOT skip important config files
+
+Generate all files required for the app to be realistically buildable.
+
+If output becomes long, continue in structured parts without losing consistency.
+
+---
+
+# 28) AI AGENT EXECUTION RULES
+
+You are acting as a serious autonomous coding agent.
+
+Rules:
+
+1. Do not skip files.
+2. Do not produce pseudo-code.
+3. Do not leave TODOs for core functionality.
+4. Do not simplify important architecture without reason.
+5. Do not generate incomplete scaffolding and pretend it is complete.
+6. Do not ignore design quality.
+7. Do not ignore navigation structure.
+8. Do not ignore Android alarm reliability requirements.
+9. Do not ignore performance requirements.
+10. Do not use weak placeholder implementations unless clearly justified.
+11. If a better practical implementation exists, use it automatically.
+12. Think in terms of shipping a real premium consumer app, not a demo.
+
+Always optimize for:
+
+* better UX
+* better visual design
+* cleaner architecture
+* faster performance
+* easier cloud build stability
+* better maintainability
+* stronger product quality
+
+---
+
+# 29) IMPORTANT FINAL INSTRUCTION
+
+Before coding, ask me only the most useful clarification questions first.
+
+Do NOT start coding immediately.
+
+Analyze everything first like a serious senior engineer, premium product designer, and autonomous Android app builder.
