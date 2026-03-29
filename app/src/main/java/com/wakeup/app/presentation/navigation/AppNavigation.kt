@@ -12,9 +12,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.google.accompanist.permissions.ExperimentalPermissionsApi
-import com.google.accompanist.permissions.isGranted
-import com.google.accompanist.permissions.rememberPermissionState
 import com.wakeup.app.presentation.onboarding.OnboardingScreen
 import com.wakeup.app.presentation.onboarding.PermissionSetupScreen
 import com.wakeup.app.presentation.onboarding.SplashScreen

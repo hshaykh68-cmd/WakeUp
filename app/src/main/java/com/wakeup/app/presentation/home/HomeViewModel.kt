@@ -30,24 +30,22 @@ class HomeViewModel @Inject constructor(
     }
 
     private fun loadData() {
-        combine(
-            getAllAlarmsUseCase(),
-            getUserStatsUseCase()
-        ) { alarms, stats ->
-            val enabledAlarms = alarms.filter { it.isEnabled }
-            val nextAlarm = enabledAlarms.minByOrNull { it.getNextRingTime() }
-            
-            HomeUiState(
-                nextAlarm = nextAlarm,
-                currentStreak = stats.streakInfo.currentStreak,
-                bestStreak = stats.streakInfo.bestStreak,
-                totalWakeUps = stats.streakInfo.totalWakeUps,
-                successRate = stats.successRate,
-                greeting = getGreeting()
-            )
-        }.onEach { state ->
-            _uiState.value = state
-        }.launchIn(viewModelScope)
+        viewModelScope.launch {
+            val stats = getUserStatsUseCase()
+            getAllAlarmsUseCase().collect { alarms ->
+                val enabledAlarms = alarms.filter { it.isEnabled }
+                val nextAlarm = enabledAlarms.minByOrNull { it.getNextRingTime() }
+                
+                _uiState.value = HomeUiState(
+                    nextAlarm = nextAlarm,
+                    currentStreak = stats.streakInfo.currentStreak,
+                    bestStreak = stats.streakInfo.bestStreak,
+                    totalWakeUps = stats.streakInfo.totalWakeUps,
+                    successRate = stats.successRate,
+                    greeting = getGreeting()
+                )
+            }
+        }
     }
 
     private fun getGreeting(): String {

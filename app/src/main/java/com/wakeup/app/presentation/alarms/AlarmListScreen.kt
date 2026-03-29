@@ -329,6 +329,3 @@ private fun AlarmCard(
     }
 }
 
-private fun androidx.compose.ui.Modifier.background(color: Color, shape: CircleShape): androidx.compose.ui.Modifier {
-    return this.clip(shape).background(color)
-}
