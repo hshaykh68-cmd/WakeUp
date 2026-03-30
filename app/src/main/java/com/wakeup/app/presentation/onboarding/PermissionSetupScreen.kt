@@ -28,6 +28,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted
 import com.google.accompanist.permissions.rememberPermissionState
@@ -36,6 +37,7 @@ import com.wakeup.app.core.theme.WakeUpColors
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable
 fun PermissionSetupScreen(
+    viewModel: PermissionSetupViewModel = hiltViewModel(),
     onPermissionsGranted: () -> Unit
 ) {
     val notificationPermissionState = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -101,6 +103,7 @@ fun PermissionSetupScreen(
                 if (notificationPermissionState != null && !notificationPermissionState.status.isGranted) {
                     notificationPermissionState.launchPermissionRequest()
                 } else {
+                    viewModel.completeOnboarding()
                     onPermissionsGranted()
                 }
             },

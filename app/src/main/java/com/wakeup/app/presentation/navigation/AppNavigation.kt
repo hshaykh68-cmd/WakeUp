@@ -73,7 +73,17 @@ fun AppNavigation(
         }
 
         composable(Screen.Main.route) {
-            MainScreen()
+            MainScreen(
+                onNavigateToCreateAlarm = {
+                    navController.navigate(Screen.CreateAlarm.route)
+                },
+                onNavigateToEditAlarm = { alarmId ->
+                    navController.navigate(Screen.EditAlarm.createRoute(alarmId))
+                },
+                onNavigateToPremium = {
+                    navController.navigate(Screen.Premium.route)
+                }
+            )
         }
 
         composable(Screen.CreateAlarm.route) {

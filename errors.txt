@@ -1,0 +1,227 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\sayae>adb logcat | findstr "com.wakeup.app"
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+03-30 09:36:19.639 17937 17937 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: com.wakeup.app, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+03-30 09:36:19.780 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:20.047 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:20.343 28674 19127 I ProximityAuth: [RecentAppsMediator] Package added: (user=UserHandle{0}) com.wakeup.app
+03-30 09:36:21.230 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:21.324 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:26.967 11949 18539 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:29.516 11949 11960 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:31.219 16256 16256 I com.wakeup.app: Late-enabling -Xcheck:jni
+03-30 09:36:31.256 11949 18541 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:31.354 16256 16256 I com.wakeup.app: Using CollectorTypeCC GC.
+03-30 09:36:31.618 16256 16256 E com.wakeup.app: BBinder_init Processname  <pre-initialized>
+03-30 09:36:32.335 11949 18541 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:32.837 16256 19768 W com.wakeup.app: Loading /data/misc/apexdata/com.android.art/dalvik-cache/arm64/system@framework@com.android.location.provider.jar@classes.odex non-executable as it requires an image which we failed to load
+03-30 09:36:32.858 16256 19768 W com.wakeup.app: Loading /data/app/~~k1o8EBgMnE6f8SA8wwU5_w==/com.google.android.gms-73194QPBTfABETVN1NvKbg==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:36:32.865 16256 16256 E com.wakeup.app: BBinder_init Processname  com.wakeup.app
+03-30 09:36:32.865 16256 16256 E com.wakeup.app: BBinder_init hasGetProcessName  com.wakeup.app
+03-30 09:36:32.963 16256 16256 W com.wakeup.app: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[])
+03-30 09:36:33.848 16256 19793 W com.wakeup.app: ClassLoaderContext classpath element checksum mismatch. expected=3532740154, found=2903979847 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk*2903979847])
+03-30 09:36:34.034 16256 19810 I com.wakeup.app: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/aoz; (domain=app, TargetSdkVersion=34) using reflection: allowed
+03-30 09:36:34.099 28674 32732 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.wakeup.app
+03-30 09:36:34.124 16256 19803 E com.wakeup.app: No package ID 6a found for resource ID 0x6a0b0013.
+03-30 09:36:34.142 16256 19803 I FA      :   adb shell setprop debug.firebase.analytics.app com.wakeup.app
+03-30 09:36:34.456 16256 16256 W com.wakeup.app: Loading /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:36:34.764 11949 18539 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:35.351 11949 18572 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:36.241 11949 18539 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:36.296 16256 16256 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:36:36.296 16256 16256 W com.wakeup.app: Common causes for lock verification issues are non-optimized dex code
+03-30 09:36:36.296 16256 16256 W com.wakeup.app: and incorrect proguard optimizations.
+03-30 09:36:36.296 16256 16256 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:36:36.296 16256 16256 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:36:36.349 11949 18541 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:36:36.575 16256 16256 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:36:36.575 16256 16256 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:36:36.575 16256 16256 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:36:37.374  1870  1898 I ActivityTaskManager: Displayed com.wakeup.app/.MainActivity for user 0: +6s238ms
+03-30 09:36:38.411 16256 19946 W MediaCodec-JNI: pid:16256,client name:com.wakeup.app
+03-30 09:36:41.662 16256 19755 I com.wakeup.app: Compiler allocated 7999KB to compile void android.view.ViewRootImpl.performTraversals()
+03-30 09:36:42.093 16256 19756 I com.wakeup.app: Background concurrent copying GC freed 10MB AllocSpace bytes, 196(4688KB) LOS objects, 49% free, 7213KB/14MB, paused 173us,208us total 160.036ms
+03-30 09:36:42.107 16256 19758 W com.wakeup.app: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/base.apk' with 1 weak references
+03-30 09:36:48.859 11949 18541 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:37:06.599 17937 17937 I GrantPermissionsViewModel: Logged buttons presented and clicked permissionGroupName=android.permission-group.NOTIFICATIONS uid=10523 package=com.wakeup.app presentedButtons=9 clickedButton=1 isPermissionRationaleShown=false sessionId=2314869249855064925 targetSdk=34 prompt=BASIC initialLocationPrecision=0 selectedLocationPrecision=0 locationAccuracyButtonClicked= false
+03-30 09:37:06.609 17937 17937 I GrantPermissionsViewModel: Permission grant result requestId=2314869249855064925 callingUid=10523 callingPackage=com.wakeup.app permission=android.permission.POST_NOTIFICATIONS isImplicit=false result=4 isPermissionRationaleShown=falseisPackageRestrictedByEnhancedConfirmation=true
+03-30 09:37:06.851 17937 17949 W ssioncontroller: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk' with 1 weak references
+03-30 09:37:21.493 16256 16256 E AndroidRuntime: Process: com.wakeup.app, PID: 16256
+03-30 09:37:21.493 16256 16256 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$2$1.invoke(MainScreen.kt:97)
+03-30 09:37:21.493 16256 16256 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$2$1.invoke(MainScreen.kt:95)
+03-30 09:37:23.270 18667 18667 I com.wakeup.app: Late-enabling -Xcheck:jni
+03-30 09:37:23.271 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:37:23.381 18667 18667 I com.wakeup.app: Using CollectorTypeCC GC.
+03-30 09:37:23.530 18667 18667 E com.wakeup.app: BBinder_init Processname  <pre-initialized>
+03-30 09:37:24.590 18667 20863 W com.wakeup.app: Loading /data/misc/apexdata/com.android.art/dalvik-cache/arm64/system@framework@com.android.location.provider.jar@classes.odex non-executable as it requires an image which we failed to load
+03-30 09:37:24.660 18667 18667 E com.wakeup.app: BBinder_init Processname  com.wakeup.app
+03-30 09:37:24.660 18667 18667 E com.wakeup.app: BBinder_init hasGetProcessName  com.wakeup.app
+03-30 09:37:24.661 18667 20863 W com.wakeup.app: Loading /data/app/~~k1o8EBgMnE6f8SA8wwU5_w==/com.google.android.gms-73194QPBTfABETVN1NvKbg==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:37:24.733 18667 18667 W com.wakeup.app: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[])
+03-30 09:37:25.383 18667 20868 W com.wakeup.app: ClassLoaderContext classpath element checksum mismatch. expected=3532740154, found=2903979847 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk*2903979847])
+03-30 09:37:25.499 18667 20877 I com.wakeup.app: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/aoz; (domain=app, TargetSdkVersion=34) using reflection: allowed
+03-30 09:37:25.501 28674 32732 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.wakeup.app
+03-30 09:37:25.553 18667 20870 E com.wakeup.app: No package ID 6a found for resource ID 0x6a0b0013.
+03-30 09:37:25.557 18667 20870 I FA      :   adb shell setprop debug.firebase.analytics.app com.wakeup.app
+03-30 09:37:25.588 18667 18667 W com.wakeup.app: Loading /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:37:25.748 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:37:26.483 18667 18667 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:26.483 18667 18667 W com.wakeup.app: Common causes for lock verification issues are non-optimized dex code
+03-30 09:37:26.483 18667 18667 W com.wakeup.app: and incorrect proguard optimizations.
+03-30 09:37:26.483 18667 18667 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:26.483 18667 18667 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:26.704 18667 18667 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:26.705 18667 18667 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:26.705 18667 18667 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:27.119  1870  1898 I ActivityTaskManager: Displayed com.wakeup.app/.MainActivity for user 0: +3s949ms
+03-30 09:37:27.242 18667 20826 I com.wakeup.app: Compiler allocated 7999KB to compile void android.view.ViewRootImpl.performTraversals()
+03-30 09:37:27.381 18667 20939 W MediaCodec-JNI: pid:18667,client name:com.wakeup.app
+03-30 09:37:35.903 19835 19835 I com.wakeup.app: Late-enabling -Xcheck:jni
+03-30 09:37:35.909 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:37:35.977 19835 19835 I com.wakeup.app: Using CollectorTypeCC GC.
+03-30 09:37:36.127 19835 19835 E com.wakeup.app: BBinder_init Processname  <pre-initialized>
+03-30 09:37:37.140 19835 21106 W com.wakeup.app: Loading /data/misc/apexdata/com.android.art/dalvik-cache/arm64/system@framework@com.android.location.provider.jar@classes.odex non-executable as it requires an image which we failed to load
+03-30 09:37:37.154 19835 21106 W com.wakeup.app: Loading /data/app/~~k1o8EBgMnE6f8SA8wwU5_w==/com.google.android.gms-73194QPBTfABETVN1NvKbg==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:37:37.228 19835 19835 E com.wakeup.app: BBinder_init Processname  com.wakeup.app
+03-30 09:37:37.228 19835 19835 E com.wakeup.app: BBinder_init hasGetProcessName  com.wakeup.app
+03-30 09:37:37.292 19835 19835 W com.wakeup.app: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[])
+03-30 09:37:37.826 19835 21113 W com.wakeup.app: ClassLoaderContext classpath element checksum mismatch. expected=3532740154, found=2903979847 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk*2903979847])
+03-30 09:37:37.928 19835 21122 I com.wakeup.app: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/aoz; (domain=app, TargetSdkVersion=34) using reflection: allowed
+03-30 09:37:37.929 28674 32732 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.wakeup.app
+03-30 09:37:37.963 19835 21119 E com.wakeup.app: No package ID 6a found for resource ID 0x6a0b0013.
+03-30 09:37:37.964 19835 21119 I FA      :   adb shell setprop debug.firebase.analytics.app com.wakeup.app
+03-30 09:37:37.978 19835 21131 W com.wakeup.app: Loading /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:37:38.123 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:37:38.800 19835 19835 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:38.800 19835 19835 W com.wakeup.app: Common causes for lock verification issues are non-optimized dex code
+03-30 09:37:38.800 19835 19835 W com.wakeup.app: and incorrect proguard optimizations.
+03-30 09:37:38.801 19835 19835 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:38.801 19835 19835 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:39.032 19835 19835 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:39.033 19835 19835 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:39.033 19835 19835 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:37:39.463  1870  1898 I ActivityTaskManager: Displayed com.wakeup.app/.MainActivity for user 0: +3s664ms
+03-30 09:37:39.786 19835 21173 W MediaCodec-JNI: pid:19835,client name:com.wakeup.app
+03-30 09:37:39.877 19835 21090 I com.wakeup.app: Compiler allocated 7999KB to compile void android.view.ViewRootImpl.performTraversals()
+03-30 09:37:47.172 19835 21091 I com.wakeup.app: Background concurrent copying GC freed 13MB AllocSpace bytes, 237(5256KB) LOS objects, 49% free, 7403KB/14MB, paused 159us,81us total 333.826ms
+03-30 09:37:47.193 19835 21093 W com.wakeup.app: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/base.apk' with 1 weak references
+03-30 09:37:57.741 19835 19835 E AndroidRuntime: Process: com.wakeup.app, PID: 19835
+03-30 09:37:57.741 19835 19835 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$3$1.invoke(MainScreen.kt:110)
+03-30 09:37:57.741 19835 19835 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$3$1.invoke(MainScreen.kt:108)
+03-30 09:38:15.382 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:38:15.393 20966 20966 I com.wakeup.app: Late-enabling -Xcheck:jni
+03-30 09:38:15.449 20966 20966 I com.wakeup.app: Using CollectorTypeCC GC.
+03-30 09:38:15.612 20966 20966 E com.wakeup.app: BBinder_init Processname  <pre-initialized>
+03-30 09:38:16.667 20966 21308 W com.wakeup.app: Loading /data/misc/apexdata/com.android.art/dalvik-cache/arm64/system@framework@com.android.location.provider.jar@classes.odex non-executable as it requires an image which we failed to load
+03-30 09:38:16.690 20966 21308 W com.wakeup.app: Loading /data/app/~~k1o8EBgMnE6f8SA8wwU5_w==/com.google.android.gms-73194QPBTfABETVN1NvKbg==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:38:16.718 20966 20966 E com.wakeup.app: BBinder_init Processname  com.wakeup.app
+03-30 09:38:16.718 20966 20966 E com.wakeup.app: BBinder_init hasGetProcessName  com.wakeup.app
+03-30 09:38:16.780 20966 20966 W com.wakeup.app: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[])
+03-30 09:38:17.191 20966 21315 W com.wakeup.app: ClassLoaderContext classpath element checksum mismatch. expected=3532740154, found=2903979847 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk*2903979847])
+03-30 09:38:17.290 28674 30000 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.wakeup.app
+03-30 09:38:17.344 20966 20966 W com.wakeup.app: Loading /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:38:17.363 20966 21339 I com.wakeup.app: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/aoz; (domain=app, TargetSdkVersion=34) using reflection: allowed
+03-30 09:38:17.390 20966 21317 E com.wakeup.app: No package ID 6a found for resource ID 0x6a0b0013.
+03-30 09:38:17.392 20966 21317 I FA      :   adb shell setprop debug.firebase.analytics.app com.wakeup.app
+03-30 09:38:17.510 11949 18540 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:38:18.161 20966 20966 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:38:18.161 20966 20966 W com.wakeup.app: Common causes for lock verification issues are non-optimized dex code
+03-30 09:38:18.161 20966 20966 W com.wakeup.app: and incorrect proguard optimizations.
+03-30 09:38:18.161 20966 20966 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:38:18.162 20966 20966 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:38:18.375 20966 20966 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:38:18.375 20966 20966 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:38:18.375 20966 20966 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:38:18.985  1870  1898 I ActivityTaskManager: Displayed com.wakeup.app/.MainActivity for user 0: +3s603ms
+03-30 09:38:19.315 20966 21377 W MediaCodec-JNI: pid:20966,client name:com.wakeup.app
+03-30 09:38:19.362 20966 21293 I com.wakeup.app: Compiler allocated 7999KB to compile void android.view.ViewRootImpl.performTraversals()
+03-30 09:38:25.617 20966 21294 I com.wakeup.app: Background concurrent copying GC freed 13MB AllocSpace bytes, 243(5380KB) LOS objects, 49% free, 8098KB/15MB, paused 474us,81us total 163.038ms
+03-30 09:38:25.630 20966 21296 W com.wakeup.app: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/base.apk' with 1 weak references
+03-30 09:38:37.688 20966 20966 E AndroidRuntime: Process: com.wakeup.app, PID: 20966
+03-30 09:38:37.688 20966 20966 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$2$1.invoke(MainScreen.kt:97)
+03-30 09:38:37.688 20966 20966 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$2$1.invoke(MainScreen.kt:95)
+03-30 09:40:40.571 11949 11949 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:40:40.606 21404 21404 I com.wakeup.app: Late-enabling -Xcheck:jni
+03-30 09:40:40.686 21404 21404 I com.wakeup.app: Using CollectorTypeCC GC.
+03-30 09:40:40.794 21404 21404 E com.wakeup.app: BBinder_init Processname  <pre-initialized>
+03-30 09:40:41.677 21404 21404 D nativeloader: Configuring clns-7 for other apk /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.wakeup.app
+03-30 09:40:41.701 21404 21404 V GraphicsEnvironment: com.wakeup.app is not listed in per-application setting
+03-30 09:40:41.794 21404 21933 W com.wakeup.app: Loading /data/misc/apexdata/com.android.art/dalvik-cache/arm64/system@framework@com.android.location.provider.jar@classes.odex non-executable as it requires an image which we failed to load
+03-30 09:40:41.814 21404 21933 W com.wakeup.app: Loading /data/app/~~k1o8EBgMnE6f8SA8wwU5_w==/com.google.android.gms-73194QPBTfABETVN1NvKbg==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:40:41.827 21404 21404 E com.wakeup.app: BBinder_init Processname  com.wakeup.app
+03-30 09:40:41.827 21404 21404 E com.wakeup.app: BBinder_init hasGetProcessName  com.wakeup.app
+03-30 09:40:41.890 21404 21404 W com.wakeup.app: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[])
+03-30 09:40:42.388 21404 21938 W com.wakeup.app: ClassLoaderContext classpath element checksum mismatch. expected=3532740154, found=2903979847 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk*2903979847])
+03-30 09:40:42.472 28674 30000 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.wakeup.app
+03-30 09:40:42.502 21404 21404 W com.wakeup.app: Loading /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:40:42.557 21404 21969 I com.wakeup.app: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/aoz; (domain=app, TargetSdkVersion=34) using reflection: allowed
+03-30 09:40:42.599 21404 21943 E com.wakeup.app: No package ID 6a found for resource ID 0x6a0b0013.
+03-30 09:40:42.602 21404 21943 I FA      :   adb shell setprop debug.firebase.analytics.app com.wakeup.app
+03-30 09:40:42.658 11949 11949 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:40:42.923 21404 22043 D com.wakeup.app: JNI_OnLoad: get JNI environment,JNI_VERSION_1_6
+03-30 09:40:42.962 21404 22043 D VivoJavaJsonManager: failed to find appName:com.wakeup.app from config key:mProtakePackages
+03-30 09:40:42.962 21404 22043 D VivoJavaJsonManager: failed to find appName:com.wakeup.app from config key:mProtakePackages
+03-30 09:40:42.964 21404 22038 D VivoJavaJsonManager: failed to find appName:com.wakeup.app from config key:mProtakePackages
+03-30 09:40:43.292 21404 21404 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:43.292 21404 21404 W com.wakeup.app: Common causes for lock verification issues are non-optimized dex code
+03-30 09:40:43.292 21404 21404 W com.wakeup.app: and incorrect proguard optimizations.
+03-30 09:40:43.292 21404 21404 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:43.292 21404 21404 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:43.492 21404 21404 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:43.492 21404 21404 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:43.492 21404 21404 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:43.893  1870  1898 I ActivityTaskManager: Displayed com.wakeup.app/.MainActivity for user 0: +3s435ms
+03-30 09:40:44.207 21404 22033 W MediaCodec-JNI: pid:21404,client name:com.wakeup.app
+03-30 09:40:44.352 21404 21918 I com.wakeup.app: Compiler allocated 7999KB to compile void android.view.ViewRootImpl.performTraversals()
+03-30 09:40:48.922 11949 11949 I artd    : GetBestInfo: /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk has no usable artifacts
+03-30 09:40:48.994 11949 11949 I artd    : Running dex2oat: /apex/com.android.art/bin/art_exec --drop-capabilities --set-task-profile=Dex2OatBackground --set-priority=background --keep-fds=6:7:8:9 -- /apex/com.android.art/bin/dex2oat64 --zip-fd=6 --zip-location=/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk --oat-fd=7 --oat-location=/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/oat/arm64/base.odex --output-vdex-fd=8 --swap-fd=9 --class-loader-context=PCL[] --classpath-dir=/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ== --instruction-set=arm64 --instruction-set-features=default --instruction-set-variant=cortex-a53 --compiler-filter=verify --compilation-reason=start-app --max-image-block-size=524288 --resolve-startup-const-strings=true --debuggable --generate-mini-debug-info --runtime-arg -Xtarget-sdk-version:34 --runtime-arg -Xhidden-api-policy:enabled --assume-value=Landroid/os/Build$VERSION;->SDK_INT:35 --no-allow-profile-code -j4 --runtime-arg -Xms64m --runtime-arg -Xmx512m --comments=app-name:com.wakeup.app,app-version-name:1.0.0,app-version-code:1,art-version:361154080
+03-30 09:40:48.994 11949 11949 I artd    : Opened FDs: 6:/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk 7:/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/oat/arm64/base.odex.oxcrg2.tmp 8:/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/oat/arm64/base.vdex.2B5dAr.tmp 9:/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/oat/arm64/base.odex.swap.iWMAyG.tmp
+03-30 09:40:49.127 21404 22137 D ProfileInstaller: Installing profile for com.wakeup.app
+03-30 09:40:50.845 21404 21919 I com.wakeup.app: Background concurrent copying GC freed 14MB AllocSpace bytes, 245(5420KB) LOS objects, 49% free, 8041KB/15MB, paused 335us,81us total 134.127ms
+03-30 09:40:50.853 21404 21922 W com.wakeup.app: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/base.apk' with 1 weak references
+03-30 09:40:53.500 21404 21404 E AndroidRuntime: Process: com.wakeup.app, PID: 21404
+03-30 09:40:53.500 21404 21404 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$2$1.invoke(MainScreen.kt:97)
+03-30 09:40:53.500 21404 21404 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$2$1.invoke(MainScreen.kt:95)
+03-30 09:40:54.883 11949 11949 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/oat/arm64/base.odex) is kOatUpToDate with filter 'verify' executable 'false'
+03-30 09:40:54.888 21886 21886 I com.wakeup.app: Late-enabling -Xcheck:jni
+03-30 09:40:54.940 21886 21886 I com.wakeup.app: Using CollectorTypeCC GC.
+03-30 09:40:55.094 21886 21886 E com.wakeup.app: BBinder_init Processname  <pre-initialized>
+03-30 09:40:55.161 21886 21886 D nativeloader: Configuring clns-7 for other apk /data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.wakeup.app
+03-30 09:40:55.191 21886 21886 V GraphicsEnvironment: com.wakeup.app is not listed in per-application setting
+03-30 09:40:55.243 21886 21886 E com.wakeup.app: BBinder_init Processname  com.wakeup.app
+03-30 09:40:55.243 21886 21886 E com.wakeup.app: BBinder_init hasGetProcessName  com.wakeup.app
+03-30 09:40:55.283 21886 21886 W com.wakeup.app: ClassLoaderContext classpath size mismatch. expected=1, found=0 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[])
+03-30 09:40:55.290 21886 22192 W com.wakeup.app: Loading /data/misc/apexdata/com.android.art/dalvik-cache/arm64/system@framework@com.android.location.provider.jar@classes.odex non-executable as it requires an image which we failed to load
+03-30 09:40:55.306 21886 22192 W com.wakeup.app: Loading /data/app/~~k1o8EBgMnE6f8SA8wwU5_w==/com.google.android.gms-73194QPBTfABETVN1NvKbg==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:40:55.997 21886 22197 W com.wakeup.app: ClassLoaderContext classpath element checksum mismatch. expected=3532740154, found=2903979847 (DLC[];PCL[base.apk*3532740154]{PCL[/system/framework/org.apache.http.legacy.jar*1230680128]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*3366631065]#PCL[/system_ext/framework/androidx.window.sidecar.jar*1666522852]} | DLC[];PCL[/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/base.apk*2903979847])
+03-30 09:40:56.077 28674 30000 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.wakeup.app
+03-30 09:40:56.082 21886 22200 I com.wakeup.app: hiddenapi: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (runtime_flags=0, domain=core-platform, api=unsupported) from Lm7/aoz; (domain=app, TargetSdkVersion=34) using reflection: allowed
+03-30 09:40:56.128 21886 22199 E com.wakeup.app: No package ID 6a found for resource ID 0x6a0b0013.
+03-30 09:40:56.131 21886 22199 I FA      :   adb shell setprop debug.firebase.analytics.app com.wakeup.app
+03-30 09:40:56.243 21886 21886 W com.wakeup.app: Loading /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/oat/arm64/base.odex non-executable as it requires an image which we failed to load
+03-30 09:40:56.427 11949 11949 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~RRvQ2m8aQkYUrN-L7qe_gQ==/com.wakeup.app-M4hoYYzYKj48ofwecVChUQ==/oat/arm64/base.odex) is kOatUpToDate with filter 'verify' executable 'false'
+03-30 09:40:56.685 21886 22278 D com.wakeup.app: JNI_OnLoad: get JNI environment,JNI_VERSION_1_6
+03-30 09:40:56.693 21886 22278 D VivoJavaJsonManager: failed to find appName:com.wakeup.app from config key:mProtakePackages
+03-30 09:40:56.694 21886 22278 D VivoJavaJsonManager: failed to find appName:com.wakeup.app from config key:mProtakePackages
+03-30 09:40:56.697 21886 22182 D VivoJavaJsonManager: failed to find appName:com.wakeup.app from config key:mProtakePackages
+03-30 09:40:56.796 21886 21886 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:56.796 21886 21886 W com.wakeup.app: Common causes for lock verification issues are non-optimized dex code
+03-30 09:40:56.796 21886 21886 W com.wakeup.app: and incorrect proguard optimizations.
+03-30 09:40:56.796 21886 21886 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:56.797 21886 21886 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:56.878 21886 21886 W com.wakeup.app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:56.878 21886 21886 W com.wakeup.app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:56.878 21886 21886 W com.wakeup.app: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-30 09:40:57.171  1870  1898 I ActivityTaskManager: Displayed com.wakeup.app/.MainActivity for user 0: +2s288ms
+03-30 09:40:57.431 21886 22264 W MediaCodec-JNI: pid:21886,client name:com.wakeup.app
+03-30 09:40:58.757 21886 22177 I com.wakeup.app: Compiler allocated 7999KB to compile void android.view.ViewRootImpl.performTraversals()
+03-30 09:41:02.277 21886 22345 D ProfileInstaller: Installing profile for com.wakeup.app
+03-30 09:41:05.098 21886 22178 I com.wakeup.app: Background concurrent copying GC freed 13MB AllocSpace bytes, 250(5520KB) LOS objects, 49% free, 7601KB/14MB, paused 222us,150us total 152.114ms
+03-30 09:41:05.124 21886 22180 W com.wakeup.app: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~hlUObMT1sAByG_pdrLa6jg==/com.google.android.webview-9Dvk1K1EIy8ZavY9u02LCw==/base.apk' with 1 weak references
+03-30 09:41:23.237 21886 21886 E AndroidRuntime: Process: com.wakeup.app, PID: 21886
+03-30 09:41:23.237 21886 21886 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$3$1.invoke(MainScreen.kt:110)
+03-30 09:41:23.237 21886 21886 E AndroidRuntime:        at com.wakeup.app.presentation.navigation.MainScreenKt$MainScreen$2$1$3$1.invoke(MainScreen.kt:108)
+^C^C

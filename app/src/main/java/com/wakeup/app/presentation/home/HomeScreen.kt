@@ -106,21 +106,83 @@ fun HomeScreen(
 
 @Composable
 private fun HomeHeader(streak: Int, greeting: String) {
-    Column(
+    Box(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(top = 16.dp)
+            .padding(top = 8.dp, bottom = 8.dp)
     ) {
-        Text(
-            text = greeting,
-            style = MaterialTheme.typography.headlineMedium,
-            color = MaterialTheme.colorScheme.onBackground
+        // Glassmorphic background
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(80.dp)
+                .clip(RoundedCornerShape(20.dp))
+                .background(
+                    brush = Brush.horizontalGradient(
+                        colors = listOf(
+                            WakeUpColors.iosBlue.copy(alpha = 0.15f),
+                            WakeUpColors.iosPurple.copy(alpha = 0.1f)
+                        )
+                    )
+                )
         )
-        Text(
-            text = "Let's win the morning",
-            style = MaterialTheme.typography.bodyLarge,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
+
+        // Content
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(80.dp)
+                .padding(horizontal = 20.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Column {
+                Text(
+                    text = greeting,
+                    style = MaterialTheme.typography.headlineSmall,
+                    color = MaterialTheme.colorScheme.onBackground,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = "Let's win the morning",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
+                )
+            }
+
+            // Streak badge with glassmorphism
+            Box(
+                modifier = Modifier
+                    .clip(RoundedCornerShape(16.dp))
+                    .background(
+                        brush = Brush.linearGradient(
+                            colors = listOf(
+                                WakeUpColors.iosOrange.copy(alpha = 0.2f),
+                                WakeUpColors.iosOrange.copy(alpha = 0.1f)
+                            )
+                        )
+                    )
+                    .padding(horizontal = 12.dp, vertical = 8.dp)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(6.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.LocalFireDepartment,
+                        contentDescription = null,
+                        tint = WakeUpColors.iosOrange,
+                        modifier = Modifier.size(20.dp)
+                    )
+                    Text(
+                        text = "$streak",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = WakeUpColors.iosOrange,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+            }
+        }
     }
 }
 
